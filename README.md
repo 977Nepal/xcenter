@@ -38,7 +38,7 @@ To get started with the project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/form-builder.git
+   git clone https://github.com/977Nepal/xcenter
    cd form-builder
    npm install 
 
