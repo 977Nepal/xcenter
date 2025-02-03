@@ -1,0 +1,37 @@
+{
+  "Login": [
+    {
+      "0": {
+        "current": {
+          "id": "text",
+          "name": "username",
+          "type": "text",
+          "label": "Text Field",
+          "placeholder": "Placeholder",
+          "className": "input-field",
+          "required": false
+        },
+        "id": 1738548306682
+      },
+      "1": {
+        "current": {
+          "id": "button",
+          "type": "button",
+          "label": "Button"
+        },
+        "id": 1738548308286
+      },
+      "id": "9226"
+    }
+  ],
+  "data": [
+    {
+      "id": "66ca",
+      "username": "dddd"
+    },
+    {
+      "id": "79b5",
+      "username": "hello world"
+    }
+  ]
+}
