@@ -3,10 +3,10 @@ import { render as rtlRender } from "@testing-library/react";
 import { applyMiddleware, compose, createStore } from "redux";
 import { Provider } from "react-redux";
 //Memory router is used check manual routes/ BrowserRouter uses defaut
-import { BrowserRouter, MemoryRouter } from "react-router-dom";
+import { BrowserRouter, MemoryRouter, Router } from "react-router-dom";
 import ReduxThunk from "redux-thunk";
 // to access rest of reducers
-import rootReducer from "../src/combineReducers/State";
+import allReducers from "../src/combineReducers/State";
 
 const middlewares = [ReduxThunk];
 //custom render that includes redux provider as a wrapper with router
@@ -15,7 +15,7 @@ export const render = (
   {
     initialState,
     store = createStore(
-      rootReducer,
+      allReducers,
       initialState,
       compose(applyMiddleware(...middlewares))
     ),
@@ -29,7 +29,7 @@ export const render = (
       </Provider>
     );
   };
-  return rtlRender(ui, { wrapper: Wrapper, ...renderOptions ,BrowserRouter,MemoryRouter,Router, axios:axios});
+  return rtlRender(ui, { wrapper: Wrapper, ...renderOptions, BrowserRouter, Router});
 };
 
 export * from "@testing-library/react";

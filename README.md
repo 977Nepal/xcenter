@@ -31,6 +31,7 @@ This is a simple Form Builder application built with React.js, Redux, Redux-Thun
 - **Server**: Used json-server as database for the CRUD functionality.
 - **UI-library**: tailwindcss.
 - **api access method**: axios.
+- **Test test**: Jest test implemented.
 
 ## Installation
 
@@ -45,3 +46,7 @@ To get started with the project, follow these steps:
 # RUN 
 1. npm run dev
 2. npx json-server --watch server/data.json --port 5000
+
+# Jest Test RUN
+1. npm test
+

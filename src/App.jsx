@@ -9,11 +9,9 @@ export default function App() {
     <Provider store={store}>
       <AuthProvider>
         <BrowserRouter>
-          <Routers />;
+          <Routers />
         </BrowserRouter>
-        ,
       </AuthProvider>
-      ,
       <ShowSnackBar />
     </Provider>
   );
